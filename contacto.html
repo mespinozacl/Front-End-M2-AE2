@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hospital Internacional de Talca</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div>
+        <div>
+            <header class="header">
+                <div>
+                    <h1 class="header__title">Hospital Internacional de Talca</h1>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__a" href="./home.html">Home</a></li>
+                            <li class="nav__item"><a class="nav__a" href="./equipo.html">Equipo Médico</a></li>
+                            <li class="nav__item"><a class="nav__a" href="./contacto.html">Contacto</a></li>
+                            <li class="nav__item"><button type="button" class="btn btn-primary header__button--btn-primary">Reservar Cita</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div>
+            <main class="contacto">
+                <div>
+                    <section class="contacto__section"> 
+                      <div>
+                        <strong>Prompts del Formulario</strong>
+                        <div>
+                          <button onclick="capitalizarTexto(prompt('Ingresa tu nombre completo:'))">Prompt Nombre</button>
+                          <button onclick="validarEmail(prompt('Ingresa un email:'))">Prompt Email</button>
+                          <button onclick="validarTelefono2(prompt('Ingresa un teléfono v2 (solo numeros):'))">Prompt Teléfono v2</button>
+                        </div>
+                      </div>
+                      <div>
+                        <strong>Alertas</strong>
+                        <alert id="utilidades-output"></alert>
+                      </div>
+                    </section>
+                    <section class="contacto__section"> 
+                        <div>               
+                            <h2 class="contacto__title">Formulario de Contacto</h2>
+                            <form>
+                                <div class="form-group row">
+                                    <div class="form-group col-sm-auto">
+                                        <label class="contacto__text" for="inputFullName">Nombre Completo: </label>
+                                        <input type="text" class="form-control" id="inputFullName" placeholder="Benito Khalo" oninput="capitalizarTexto(document.getElementById('inputFullName').value)">
+                                      </div>
+                                    <div class="form-group col-sm-auto">
+                                        <label class="contacto__text" for="inputEmail">Email: </label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" oninput="validarEmail(document.getElementById('inputEmail').value)">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                  <div class="form-group col-sm-auto">
+                                    <label class="contacto__text" for="inputPhone">Telefono: </label>
+                                    <input type="number" class="form-control" id="inputPhone" placeholder="2212345678" oninput="almacenarTelefono(document.getElementById('inputPhone').value)">
+                                  </div>
+                                  <div class="form-group col-sm-auto">
+                                    <label class="contacto__text" for="inputAddress">Dirección: </label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Alameda 1234 Depto. 123">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <div class="form-group col-sm-auto">
+                                    <label class="contacto__text" for="inputCity">Ciudad: </label>
+                                    <input type="text" class="form-control" id="inputCity" placeholder="Talca, París y Londres">
+                                  </div>
+                                  <div class="form-group col-sm-auto">
+                                    <label class="contacto__text" for="inputRegion">Región: </label>
+                                    <select id="inputRegion" class="form-control">
+                                      <option selected>Selecciona una Región...</option>
+                                      <option>Metropolitana</option>
+                                      <option>Valparaíso</option>
+                                      <option>Libertador Bernardo O'Higgins</option>
+                                      <option>Maule</option>
+                                      <option>Ñuble</option>
+                                      <option>Bío Bío</option>
+                                      <option>Otra</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                  <div class="form-group col-sm-auto">
+                                    <label class="contacto__text" for="inputSubject">Asunto: </label>
+                                    <input type="text" class="form-control" id="inputSubject" placeholder="Necesito orientación">
+                                  </div>
+                                  <div class="form-group col-sm-auto">
+                                    <label class="contacto__text" for="inputMessage">Mensaje: </label>
+                                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Ingresa tu consulta"></textarea>
+                                  </div>
+                                <button type="submit" class="btn btn-secondary contacto__button--btn-secondary">Enviar</button>
+                              </form>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <section class="contacto__section">
+                        <h2 class="contacto__title">Mapa de Ubicación</h2>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.481200549011!2d-71.68668262261194!3d-35.418108000966036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c43a126502a7%3A0x3ca8d6193626934f!2sLas%20Viejas%20Cochinas!5e0!3m2!1ses!2scl!4v1729555225663!5m2!1ses!2scl" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div>
+            <footer class="footer">
+                <p class="footer__title">Talca, Chile 2024</p>
+                <ul class="footer__list">
+                    <li class="footer__item">Autor: Elver</li>
+                    <li class="footer__item">Email: <a class="footer__a" href="href="mailto:elver@durero.com">elver@durero.com</a> - Instagram: <a class="footer__a" href="@elver">@elver</a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Archivos JavaScript del proyecto -->
+    <script type="module" src="src/js/stack.js"></script>
+    <script type="module" src="src/js/entorno.js"></script>
+    <script type="module" src="src/js/desarrollo.js"></script>
+    <script type="module" src="src/js/utilidades.js"></script>
+</body>
+</html>

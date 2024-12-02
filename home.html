@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hospital Internacional de Talca</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <div>
+        <div>
+            <header class="header">
+                <div>
+                    <h1 class="header__title">Hospital Internacional de Talca</h1>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__a" href="./home.html">Home</a></li>
+                            <li class="nav__item"><a class="nav__a" href="./equipo.html">Equipo Médico</a></li>
+                            <li class="nav__item"><a class="nav__a" href="./contacto.html">Contacto</a></li>
+                            <li class="nav__item"><button type="button" class="btn btn-primary header__button--btn-primary">Reservar Cita</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div>
+            <main class="home">
+                <div>
+                    <section class="home__section">
+                        <h2 class="home__title">Bienvenidos al Hospital de Talca</h2>
+                        <p class="home__text">El mejor lugar para mejorar.</p>
+                        <p class="home__text">Nuestra misión es dejarlo sin dinero.</p>
+                        <p class="home__text">Nuestra visión es hacer de la salud un gran negocio.</p>
+                    </section>
+                </div>
+                <div>
+                    <section class="home__section">
+                        <h2 class="home__title">Servicios</h2>
+                        <h3 class="home__text">Consultas</h3>
+                        <p class="home__text">Consulta si estás sano.
+                            Si estás enfermo te derivaremos.
+                        </p>
+                        <h3 class="home__text">Urgencias</h3>
+                        <p class="home__text">Atendemos tus urgencias.
+                            Siempre dispuestos a dar atención de segunda.
+                        </p>
+                        <h3 class="home__text">Especialidades</h3>
+                        <p class="home__text">Somos especialistas especializados.
+                            Contamos con especialistas para cada corte.
+                            <ul id="especialidades">
+                            </ul>
+                        </p>
+                    </section>
+                </div>
+                <div>
+                    <section class="home__section">
+                        <h2 class="home__title">Testimonios</h2>
+                        <h3 class="home__text">Luisa Matamala Cuevas</h3>
+                        <p class="home__text section__testimonio">"Yo estaba sana y mejoré.
+                            Ahora que estoy mejor, volveré pronto.
+                        </p>
+                        <h3 class="home__text">Jaime Keagan</h3>
+                        <p class="home__text section__testimonio">"Las sopaipillas estaban ricas.
+                            Probaré las sopaipillas pasadas la próxima ocasión."
+                        </p>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div>
+            <footer class="footer">
+                <p class="footer__title">Talca, Chile 2024</p>
+                <ul class="footer__list">
+                    <li class="footer__item">Autor: Elver</li>
+                    <li class="footer__item">Email: <a class="footer__a" href="href="mailto:elver@durero.com">elver@durero.com</a> - Instagram: <a class="footer__a" href="@elver">@elver</a></li>
+                </ul>
+            </footer>
+        </div>
+        <div>
+            <!-- Secciones de ejemplo y botones -->
+            <section id="stack-section">
+                <h2>Stack JavaScript</h2>
+                <button onclick="mostrarInfoStack('MEAN')">Ver Stack MEAN</button>
+                <button onclick="mostrarInfoStack('MERN')">Ver Stack MERN</button>
+                <button onclick="ejemploFrontend()">Ejemplo Frontend</button>
+                <button onclick="ejemploBackend()">Ejemplo Backend</button>
+                <pre id="stack-output"></pre>
+            </section>
+            <!-- Sección de Entorno -->
+            <section id="entorno-section">
+                <h2>Entorno de Ejecución</h2>
+                <button onclick="mostrarEntorno()">Mostrar Entorno</button>
+                <button onclick="simulacionEventLoop()">Simulación Event Loop</button>
+                <pre id="entorno-output"></pre>
+            </section>
+            <!-- Sección de Desarrollo -->
+            <section id="desarrollo-section">
+                <h2>Desarrollo de Aplicaciones JavaScript</h2>
+                <button onclick="ejemploVariables()">Ejemplo Variables</button>
+                <button onclick="ejemploOperadores()">Ejemplo Operadores</button>
+                <button onclick="ejemploCondicionalesYCiclos()">
+                Ejemplo Condicionales y Ciclos
+                </button>
+                <button onclick="ejemploManejoErrores()">
+                Ejemplo Manejo de Errores
+                </button>
+                <pre id="desarrollo-output"></pre>
+            </section>
+                  <!-- Sección de Utilidades -->
+            <section id="utilidades-section">
+                <h2>Utilidades JavaScript</h2>
+                <button onclick="validarEmail(prompt('Ingresa un email:'))">
+                Validar Email
+                </button>
+                <button
+                onclick="validarTelefono(prompt('Ingresa un teléfono de 10 dígitos:'))"
+                >
+                Validar Teléfono
+                </button>
+                <button onclick="capitalizarTexto(prompt('Ingresa un texto:'))">
+                Capitalizar Texto
+                </button>
+                <button onclick="sumarArreglo([1, 2, 3, 4, 5])">Sumar Arreglo</button>
+                <pre id="utilidades-output"></pre>
+            </section>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Archivos JavaScript del proyecto -->
+    <script type="module" src="src/js/stack.js"></script>
+    <script type="module" src="src/js/entorno.js"></script>
+    <script type="module" src="src/js/desarrollo.js"></script>
+    <script type="module" src="src/js/utilidades.js"></script>
+    <script type="module" src="src/js/home.js"></script>
+</body>
+</html>

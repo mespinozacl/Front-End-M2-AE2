@@ -1,0 +1,33 @@
+// 1. Importar variables, mixins y funciones
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// 2. Importar estilos base y de reinicio
+@import 'base/reset';
+@import 'base/typography';
+
+// 3. Importar estilos de componentes
+//@import 'components/header';
+//@import 'components/footer';
+@import 'components/button';
+@import 'components/card';
+@import 'components/form';
+
+// 4. Importar estilos de la estructura general (layout)
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+// 5. Importar estilos específicos de páginas (opcional)
+@import 'pages/home';
+@import 'pages/contacto';
+@import 'pages/equipo';
+
+// 6. Importar estilos de temas (opcional)
+@import 'themes/default';
+
+// 7. Importar estilos de bibliotecas externas
+@import 'vendors/bootstrap';
+@import 'vendors/normalize';

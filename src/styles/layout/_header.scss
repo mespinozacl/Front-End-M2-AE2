@@ -1,0 +1,51 @@
+.header {
+    text-align: center;
+    background-color: #3498db;
+    padding: 10px;
+
+    &__title {
+      font-size: 3rem;
+      color: whitesmoke;
+    }
+    .nav__list {
+      display: flex;
+      justify-content: space-around;
+    }
+    .nav__item {
+      list-style: none;
+    }
+    .nav__link {
+      text-decoration: none;
+    }
+    .nav__a {
+      font-size: 1.4rem;
+      color: whitesmoke;
+    }
+
+    .header__button--btn-primary {
+      font-size: 1.4rem;
+      font-weight: bold;
+      background-color: #2eb3d4;
+      color: whitesmoke;
+      transition: background-color 2.0s ease;
+    }
+    .header__button--btn-primary:hover {
+      background-color: #1b8099;
+      color: whitesmoke;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .header__title {
+      font-size: 2.5rem;
+    }
+    .nav__list {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header__title {
+      font-size: 2rem;
+    }
+  }

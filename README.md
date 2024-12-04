@@ -38,6 +38,7 @@ Asociado el botón "Prompt Teléfono v2" -> Se agregó un alert solo para cumpli
 
 2.2. Usa variables (let, const) para almacenar la información y explica el scope de
 estas variables en el README.
+
 Las variables declaradas con let y const tienen alcance de bloque de ejecución.
 Ambas no pueden volver a ser redefinidas en el mismo bloque de ejecución.
 Su diferencia está en la caracteristica de los valores que almacenaremos (constantes o que cambian de valor)
@@ -53,10 +54,12 @@ Se agregó una validación "rasca" de tipo para el prompt del telefono (la de ex
 Implementa un ciclo o iteración (for, while, forEach) que manipule el DOM de forma dinámica.
 
 3.1. Ejemplo: muestra dinámicamente una lista de servicios médicos o doctores en la página de inicio o en la página de equipo médico, utilizando datos estáticos.
+
 const especialidades = ["Cirugía Plástica", "Medicina General", "Urología", "Nutrición", "Cardiología", "Pediatría", "Neurología"];
 Se muestra la lista de especialidades disponibles: homes.js y home.html se emplean para mostrar la lista
 
 3.2. Utiliza condicionales dentro del ciclo para mostrar solo elementos específicos, como doctores con más de 5 años de experiencia o servicios médicos disponibles.
+
 Se muestra la lista de profesionales con experiencia > 5 años: equipo.js y equipo.html se emplean para mostrar la lista
 
 4. Manejo de Errores con try/catch y Debugging (2 puntos)
